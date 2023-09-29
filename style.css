@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(16, 2, 37);
+    color: rgb(219, 218, 187);
+}
+.btn{
+    padding: 13px;
+    border: none;
+    color: rgb(4, 17, 71);
+    font-weight: bold;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+}
+.btn:hover{
+    background-color: rgba(42, 2, 61, 0.571);
+    color: rgb(41, 116, 255);
+    cursor: pointer;
+    scale: 1.1;
+}
+.card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(27, 13, 81);
+    box-shadow: 0 0 10px rgb(99, 71, 128);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+.logo{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit:cover;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgb(28, 13, 44);
+    transition: all 0.5s ease-in-out;
+}
+.card:hover .logo{
+    scale: 0;
+}
+.card:hover{
+    border-radius: 15px;
+    width: 450px;
+    height: 280px;
+
+}
+.text-section{
+    position: absolute;
+    top: 40px;
+    left: 60px;
+    width: 200px;
+    font-weight: 600;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+.text-section p{
+     margin-top: 5px;
+     
+}
+.text-section h1{
+    color: rgb(41, 116, 255);
+    
+}
+.card:hover .text-section{
+    opacity: 1;
+}
+.bottle{
+    position: absolute;
+    top: -35px;
+    width: 220px;
+    right: -50px;
+    height: auto;
+    object-fit: cover;
+    opacity: 0;
+    rotate: 10deg;
+    transition: all 0.3s ease-in-out;
+}
+.card:hover .bottle{
+    opacity: 1;
+}
